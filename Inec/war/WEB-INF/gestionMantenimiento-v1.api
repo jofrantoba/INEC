@@ -1,0 +1,636 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://inec-145618.appspot.com/_ah/api",
+  "name" : "gestionMantenimiento",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://inec-145618.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "inec.com",
+  "ownerName" : "inec.com",
+  "packagePath" : "server.ws",
+  "methods" : {
+    "gestionMantenimiento.insertarTipoIncidencia" : {
+      "path" : "insertarTipoIncidencia",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.insertarTipoIncidencia",
+      "request" : {
+        "parameters" : {
+          "itiCodeTipoIncidencia" : {
+            "type" : "string",
+            "required" : true
+          },
+          "itiDescripcion" : {
+            "type" : "string",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.listPartidoPolitico" : {
+      "path" : "listPartidoPolitico",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.listPartidoPolitico",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.insertarUbigeo" : {
+      "path" : "insertarUbigeo",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.insertarUbigeo",
+      "request" : {
+        "parameters" : {
+          "iuCodeUbigeo" : {
+            "type" : "string",
+            "required" : true
+          },
+          "iuDepartamento" : {
+            "type" : "string",
+            "required" : true
+          },
+          "iuProvincia" : {
+            "type" : "string",
+            "required" : false
+          },
+          "iuDistrito" : {
+            "type" : "string",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.listZona" : {
+      "path" : "listZona",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.listZona",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.listUbigeo" : {
+      "path" : "listUbigeo",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.listUbigeo",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.insertarZona" : {
+      "path" : "insertarZona",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.insertarZona",
+      "request" : {
+        "parameters" : {
+          "izNombreZona" : {
+            "type" : "string",
+            "required" : true
+          },
+          "izDepartamento" : {
+            "type" : "string",
+            "required" : true
+          },
+          "izProvincia" : {
+            "type" : "string",
+            "required" : true
+          },
+          "izDistrito" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.listTipoIncidencia" : {
+      "path" : "listTipoIncidencia",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.listTipoIncidencia",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionMantenimiento.insertarPartidoPolitico" : {
+      "path" : "insertarPartidoPolitico",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionMantenimiento.insertarPartidoPolitico",
+      "request" : {
+        "parameters" : {
+          "ippCodePartidoPolitico" : {
+            "type" : "string",
+            "required" : true
+          },
+          "ippNombrePartidoPolitico" : {
+            "type" : "string",
+            "required" : true
+          },
+          "ippLider" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "ReturnValue" : {
+        "id" : "ReturnValue",
+        "type" : "object",
+        "properties" : {
+          "nameClass" : {
+            "type" : "string"
+          },
+          "valueReturn" : {
+            "$ref" : "_any"
+          },
+          "returnTipoIncidencia" : {
+            "$ref" : "TipoIncidencia"
+          },
+          "returnListTipoIncidencia" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "TipoIncidencia"
+            }
+          },
+          "returnPartidoPolitico" : {
+            "$ref" : "PartidoPolitico"
+          },
+          "returnListPartidoPolitico" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "PartidoPolitico"
+            }
+          },
+          "returnUbigeo" : {
+            "$ref" : "Ubigeo"
+          },
+          "returnListUbigeo" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Ubigeo"
+            }
+          },
+          "returnZona" : {
+            "$ref" : "Zona"
+          },
+          "returnListZona" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Zona"
+            }
+          },
+          "returnUsuarioFiscalizador" : {
+            "$ref" : "UsuarioFiscalizador"
+          },
+          "returnIncidencia" : {
+            "$ref" : "Incidencia"
+          },
+          "returnListIncidencia" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Incidencia"
+            }
+          },
+          "returnListUsuarioFiscalizador" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "UsuarioFiscalizador"
+            }
+          },
+          "returnListPosicionFiscalizador" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "PosicionFiscalizador"
+            }
+          },
+          "returnListNotificacion" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Notificacion"
+            }
+          }
+        }
+      },
+      "_any" : {
+        "id" : "_any",
+        "type" : "any"
+      },
+      "TipoIncidencia" : {
+        "id" : "TipoIncidencia",
+        "type" : "object",
+        "properties" : {
+          "idTipoIncidencia" : {
+            "type" : "string"
+          },
+          "codeTipoIncidencia" : {
+            "type" : "string"
+          },
+          "descripcion" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "PartidoPolitico" : {
+        "id" : "PartidoPolitico",
+        "type" : "object",
+        "properties" : {
+          "idPartidoPolitico" : {
+            "type" : "string"
+          },
+          "codePartidoPolitico" : {
+            "type" : "string"
+          },
+          "nombrePartido" : {
+            "type" : "string"
+          },
+          "lider" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Ubigeo" : {
+        "id" : "Ubigeo",
+        "type" : "object",
+        "properties" : {
+          "idUbigeo" : {
+            "type" : "string"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "departamento" : {
+            "type" : "string"
+          },
+          "provincia" : {
+            "type" : "string"
+          },
+          "distrito" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Zona" : {
+        "id" : "Zona",
+        "type" : "object",
+        "properties" : {
+          "idZona" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "nombreZona" : {
+            "type" : "string"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "UsuarioFiscalizador" : {
+        "id" : "UsuarioFiscalizador",
+        "type" : "object",
+        "properties" : {
+          "idUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "dniFiscalizador" : {
+            "type" : "string"
+          },
+          "clave" : {
+            "type" : "string"
+          },
+          "nombre" : {
+            "type" : "string"
+          },
+          "apellido" : {
+            "type" : "string"
+          },
+          "numero" : {
+            "type" : "string"
+          },
+          "correoPersonal" : {
+            "type" : "string"
+          },
+          "correoCorporativo" : {
+            "type" : "string"
+          },
+          "estado" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "nombreZona" : {
+            "type" : "string"
+          },
+          "tokenFirebase" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Incidencia" : {
+        "id" : "Incidencia",
+        "type" : "object",
+        "properties" : {
+          "idIncidencia" : {
+            "type" : "string"
+          },
+          "codeIncidencia" : {
+            "type" : "string"
+          },
+          "fechaCelular" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "fechaServidor" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "direccion" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "codeTipoIncidencia" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "beanUbigeo" : {
+            "$ref" : "Ubigeo"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "codePartidoPolitico" : {
+            "type" : "string"
+          },
+          "nombrePartidoPolitico" : {
+            "type" : "string"
+          },
+          "descripcion" : {
+            "type" : "string"
+          },
+          "longitud" : {
+            "type" : "number"
+          },
+          "latitud" : {
+            "type" : "number"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          },
+          "listUrlFoto" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "listLatitud" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number"
+            }
+          },
+          "listLongitud" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number"
+            }
+          }
+        }
+      },
+      "PosicionFiscalizador" : {
+        "id" : "PosicionFiscalizador",
+        "type" : "object",
+        "properties" : {
+          "idPosicionFiscalizador" : {
+            "type" : "string"
+          },
+          "codePosicionFiscalizador" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "longitud" : {
+            "type" : "number"
+          },
+          "latitud" : {
+            "type" : "number"
+          },
+          "departamento" : {
+            "type" : "string"
+          },
+          "provincia" : {
+            "type" : "string"
+          },
+          "distrito" : {
+            "type" : "string"
+          },
+          "fechaFormat" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      },
+      "Notificacion" : {
+        "id" : "Notificacion",
+        "type" : "object",
+        "properties" : {
+          "idNotificacion" : {
+            "type" : "string"
+          },
+          "codeNotificacion" : {
+            "type" : "string"
+          },
+          "codeProgramacionNotificacion" : {
+            "type" : "string"
+          },
+          "fechaNotificacion" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "fechaNotificacionFiltro" : {
+            "type" : "string"
+          },
+          "estado" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.inec.server.ws.WsGestionMantenimiento.insertarTipoIncidencia" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.listPartidoPolitico" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.insertarUbigeo" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.listZona" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.listUbigeo" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.insertarZona" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.listTipoIncidencia" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionMantenimiento.insertarPartidoPolitico" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      }
+    }
+  }
+}

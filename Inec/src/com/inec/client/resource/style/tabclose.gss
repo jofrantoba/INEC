@@ -1,0 +1,32 @@
+
+.btnClose{
+	width:24px;
+	heigth:24px;
+	border:none;
+}
+
+.lblTitulo{
+	
+	text-align:left;
+	margin-right:10px;
+    color:#000;
+    width: 120px;
+	position:relative;
+	padding: 2px;
+	margin:0;
+    font-family: "Comic Sans MS", cursive, sans-serif;	
+    overflow:hidden;
+    text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+.pnlHor{
+	padding : 0;
+	width: auto;
+	height:30px;
+	border-radius: 18px 18px 0px 0px;
+	background: #BDF9BB;
+	margin-left:5px;
+	
+}
+

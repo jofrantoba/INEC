@@ -1,0 +1,103 @@
+@def COLOR_APP_VERDE #d32f2f;
+@def COLOR_APP_BLANCO #FFFFFF;
+@def COLOR_APP_GRIS #333333;
+
+#flexTable td,th{
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+}
+
+
+#kngBtnOperacion{
+	margin-left:35%;
+	color:COLOR_APP_BLANCO;
+	background-color:COLOR_APP_VERDE;
+}
+
+#btnCerrar{
+	border-radius: 50% !important;
+	float:right;
+	box-shadow:none;
+	font-size:35px;
+	font-weight:lighter;
+
+	transition-property: initial;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+}
+#pnlCardContentCabecera{
+	color:COLOR_APP_BLANCO;
+	border-bottom-style:groove;
+	border-bottom-width:1px;
+	background-color:COLOR_APP_GRIS;
+	margin-bottom:10px;
+	padding:10px 20px;
+}
+#pnlCardContent{
+	padding-right: 5px;
+	padding-left: 15px;
+	
+}
+#floadIcon{
+	border-bottom: 1px solid #9e9e9e !important;
+	width:100%;
+	height:3rem;
+}
+.father{
+}
+
+#gwt-uid-9{
+	color:COLOR_APP_VERDE;
+}
+.validate{
+	border-bottom:5px;
+}
+
+
+#Uploady{
+	border-bottom: 1px solid #9e9e9e;
+	width:85%;
+	margin: 0 0 15px 0;	
+	padding-bottom:15px;
+}
+
+@external validate;
+
+input[type='text'].validate {
+	border-bottom: 1px solid #9e9e9e !important;
+	background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 85%;
+    font-size: 1.2rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all .3s;		
+}
+
+input[type='text']:focus:not([readonly]){
+	border-bottom: 1px solid #0FEF5E;
+	box-shadow:0 1.5px 0 0 #0FEF5E;
+}
+
+
+@external btn-floating;
+.btn-floating:hover{
+	background-color:#7FE894;
+}
+
+.btn-floating{
+	background-color:COLOR_APP_VERDE;
+}
+
+
+.pnlContenedor{
+	font-family:"Roboto", sans-serif;
+}

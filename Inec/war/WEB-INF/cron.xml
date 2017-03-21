@@ -1,0 +1,7 @@
+ <cronentries>
+  <cron>
+<url>/gaejcronjob</url>
+<description>Invoked task cron for notifications inec</description>
+<schedule>every 1 hours</schedule>
+</cron>
+</cronentries>

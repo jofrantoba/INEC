@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="colorAccent">#ff9800</color>
+
+    <color name="primary">#8BC34A</color>
+    <color name="primary_dark">#689F38</color>
+    <color name="primary_light">#DCEDC8</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="white">#ffffff</color>
+    <!--<color name="white">#d32f2f</color>-->
+    <color name="separator">#F2F2F2</color>
+    <color name="gris_gps">#848484</color>
+    <color name="black">#000000</color>
+    <color name="red_inec">#B40404</color>
+    <color name="display_info">#808080</color>
+
+    <color name="hint_inec">#f0ecec</color>
+    <color name="tw__transparent">#00000000</color>
+</resources>

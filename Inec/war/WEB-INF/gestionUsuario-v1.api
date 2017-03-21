@@ -1,0 +1,934 @@
+{
+  "extends" : "thirdParty.api",
+  "abstract" : false,
+  "root" : "https://inec-145618.appspot.com/_ah/api",
+  "name" : "gestionUsuario",
+  "version" : "v1",
+  "defaultVersion" : false,
+  "discovery" : [ "PUBLIC" ],
+  "adapter" : {
+    "bns" : "https://inec-145618.appspot.com/_ah/spi",
+    "deadline" : 65.0,
+    "type" : "lily"
+  },
+  "auth" : {
+    "allowCookieAuth" : false
+  },
+  "frontendLimits" : {
+    "unregisteredUserQps" : -1,
+    "unregisteredQps" : -1,
+    "unregisteredDaily" : -1,
+    "rules" : [ ]
+  },
+  "cacheControl" : {
+    "type" : "no-cache",
+    "maxAge" : 0
+  },
+  "ownerDomain" : "inec.com",
+  "ownerName" : "inec.com",
+  "packagePath" : "server.ws",
+  "methods" : {
+    "gestionUsuario.estadoNotificacion" : {
+      "path" : "estadoNotificacion",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.estadoNotificacion",
+      "request" : {
+        "parameters" : {
+          "enCodeNotificacion" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.listarNotificaciones" : {
+      "path" : "listarNotificaciones",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.listarNotificaciones",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.guardarPosicion" : {
+      "path" : "guardarPosicion",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.guardarPosicion",
+      "request" : {
+        "parameters" : {
+          "gpCodeUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "gpLatitud" : {
+            "type" : "double",
+            "required" : true
+          },
+          "gpLongitud" : {
+            "type" : "double",
+            "required" : true
+          },
+          "gpDepartamento" : {
+            "type" : "string",
+            "required" : true
+          },
+          "gpProvincia" : {
+            "type" : "string",
+            "required" : true
+          },
+          "gpDistrito" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.actualizarUsuario" : {
+      "path" : "actualizarUsuario",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.actualizarUsuario",
+      "request" : {
+        "parameters" : {
+          "auDni" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auNombres" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auApellidos" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auCorreoPersonal" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auCorreoInstitucional" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auTelefono" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auEstado" : {
+            "type" : "string",
+            "required" : true
+          },
+          "auCodeZona" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.actualizarPassword" : {
+      "path" : "actualizarPassword",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.actualizarPassword",
+      "request" : {
+        "parameters" : {
+          "apDniUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "apClaveUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "apNuevaClave" : {
+            "type" : "string",
+            "required" : true
+          },
+          "apConfirmarClave" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.crearUsuario" : {
+      "path" : "crearUsuario",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.crearUsuario",
+      "request" : {
+        "parameters" : {
+          "cuDni" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuNombres" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuApellidos" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuCorreoPersonal" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuCorreoInstitucional" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuTelefono" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuEstado" : {
+            "type" : "string",
+            "required" : true
+          },
+          "cuCodeZona" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.enviarCorreoFiscalizadores" : {
+      "path" : "enviarCorreoFiscalizadores",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.enviarCorreoFiscalizadores",
+      "request" : {
+        "parameters" : {
+          "ecfAsunto" : {
+            "type" : "string",
+            "required" : true
+          },
+          "ecfContenido" : {
+            "type" : "string",
+            "required" : true
+          },
+          "ecfCorreos" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.planificarNotificacion" : {
+      "path" : "planificarNotificacion",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.planificarNotificacion",
+      "request" : {
+        "parameters" : {
+          "pnDiaInicio" : {
+            "type" : "string",
+            "required" : true
+          },
+          "pnDiaFin" : {
+            "type" : "string",
+            "required" : true
+          },
+          "pnHoraInicio" : {
+            "type" : "int32",
+            "required" : true
+          },
+          "pnHoraFin" : {
+            "type" : "int32",
+            "required" : true
+          },
+          "pnFrecuencia" : {
+            "type" : "int32",
+            "required" : true
+          },
+          "pnTipoFrecuencia" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.loginUsuario" : {
+      "path" : "loginUsuario",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.loginUsuario",
+      "request" : {
+        "parameters" : {
+          "luCorreoUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "luClaveUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "luTokenFirebase" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.cerrarSesionFiscalizador" : {
+      "path" : "cerrarSesionFiscalizador",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.cerrarSesionFiscalizador",
+      "request" : {
+        "parameters" : {
+          "csfCodeSessionFiscalizador" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.listarUsuarios" : {
+      "path" : "listarUsuarios",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.listarUsuarios",
+      "request" : {
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.buscarUsuarioFiscalizadores" : {
+      "path" : "buscarUsuarioFiscalizadores",
+      "httpMethod" : "POST",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.buscarUsuarioFiscalizadores",
+      "request" : {
+        "parameters" : {
+          "bufPatron" : {
+            "type" : "string",
+            "required" : true
+          },
+          "bufCodeZona" : {
+            "type" : "string",
+            "required" : false
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.listarPosicionFiscalizadors" : {
+      "path" : "listarPosicionFiscalizadors",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.listarPosicionFiscalizadors",
+      "request" : {
+        "parameters" : {
+          "lpfDniUsuario" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.listarRutas" : {
+      "path" : "listarRutas",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.listarRutas",
+      "request" : {
+        "parameters" : {
+          "lpffDniUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "lpffFechaFormat" : {
+            "type" : "string",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "gestionUsuario.listarRutasIntervalo" : {
+      "path" : "listarRutasIntervalo",
+      "httpMethod" : "GET",
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+      "rosyMethod" : "com.inec.server.ws.WsGestionUsuario.listarRutasIntervalo",
+      "request" : {
+        "parameters" : {
+          "lriDniUsuario" : {
+            "type" : "string",
+            "required" : true
+          },
+          "lriFechaInicio" : {
+            "type" : "int64",
+            "required" : true
+          },
+          "lriFechaFin" : {
+            "type" : "int64",
+            "required" : true
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+        "body" : "autoTemplate(backendResponse)"
+      }
+    }
+  },
+  "descriptor" : {
+    "schemas" : {
+      "ReturnValue" : {
+        "id" : "ReturnValue",
+        "type" : "object",
+        "properties" : {
+          "nameClass" : {
+            "type" : "string"
+          },
+          "valueReturn" : {
+            "$ref" : "_any"
+          },
+          "returnTipoIncidencia" : {
+            "$ref" : "TipoIncidencia"
+          },
+          "returnListTipoIncidencia" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "TipoIncidencia"
+            }
+          },
+          "returnPartidoPolitico" : {
+            "$ref" : "PartidoPolitico"
+          },
+          "returnListPartidoPolitico" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "PartidoPolitico"
+            }
+          },
+          "returnUbigeo" : {
+            "$ref" : "Ubigeo"
+          },
+          "returnListUbigeo" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Ubigeo"
+            }
+          },
+          "returnZona" : {
+            "$ref" : "Zona"
+          },
+          "returnListZona" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Zona"
+            }
+          },
+          "returnUsuarioFiscalizador" : {
+            "$ref" : "UsuarioFiscalizador"
+          },
+          "returnIncidencia" : {
+            "$ref" : "Incidencia"
+          },
+          "returnListIncidencia" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Incidencia"
+            }
+          },
+          "returnListUsuarioFiscalizador" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "UsuarioFiscalizador"
+            }
+          },
+          "returnListPosicionFiscalizador" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "PosicionFiscalizador"
+            }
+          },
+          "returnListNotificacion" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "Notificacion"
+            }
+          }
+        }
+      },
+      "_any" : {
+        "id" : "_any",
+        "type" : "any"
+      },
+      "TipoIncidencia" : {
+        "id" : "TipoIncidencia",
+        "type" : "object",
+        "properties" : {
+          "idTipoIncidencia" : {
+            "type" : "string"
+          },
+          "codeTipoIncidencia" : {
+            "type" : "string"
+          },
+          "descripcion" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "PartidoPolitico" : {
+        "id" : "PartidoPolitico",
+        "type" : "object",
+        "properties" : {
+          "idPartidoPolitico" : {
+            "type" : "string"
+          },
+          "codePartidoPolitico" : {
+            "type" : "string"
+          },
+          "nombrePartido" : {
+            "type" : "string"
+          },
+          "lider" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Ubigeo" : {
+        "id" : "Ubigeo",
+        "type" : "object",
+        "properties" : {
+          "idUbigeo" : {
+            "type" : "string"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "departamento" : {
+            "type" : "string"
+          },
+          "provincia" : {
+            "type" : "string"
+          },
+          "distrito" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Zona" : {
+        "id" : "Zona",
+        "type" : "object",
+        "properties" : {
+          "idZona" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "nombreZona" : {
+            "type" : "string"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "UsuarioFiscalizador" : {
+        "id" : "UsuarioFiscalizador",
+        "type" : "object",
+        "properties" : {
+          "idUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "dniFiscalizador" : {
+            "type" : "string"
+          },
+          "clave" : {
+            "type" : "string"
+          },
+          "nombre" : {
+            "type" : "string"
+          },
+          "apellido" : {
+            "type" : "string"
+          },
+          "numero" : {
+            "type" : "string"
+          },
+          "correoPersonal" : {
+            "type" : "string"
+          },
+          "correoCorporativo" : {
+            "type" : "string"
+          },
+          "estado" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "nombreZona" : {
+            "type" : "string"
+          },
+          "tokenFirebase" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Incidencia" : {
+        "id" : "Incidencia",
+        "type" : "object",
+        "properties" : {
+          "idIncidencia" : {
+            "type" : "string"
+          },
+          "codeIncidencia" : {
+            "type" : "string"
+          },
+          "fechaCelular" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "fechaServidor" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "direccion" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "codeTipoIncidencia" : {
+            "type" : "string"
+          },
+          "codeZona" : {
+            "type" : "string"
+          },
+          "beanUbigeo" : {
+            "$ref" : "Ubigeo"
+          },
+          "codeUbigeo" : {
+            "type" : "string"
+          },
+          "codePartidoPolitico" : {
+            "type" : "string"
+          },
+          "nombrePartidoPolitico" : {
+            "type" : "string"
+          },
+          "descripcion" : {
+            "type" : "string"
+          },
+          "longitud" : {
+            "type" : "number"
+          },
+          "latitud" : {
+            "type" : "number"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          },
+          "operacion" : {
+            "type" : "string"
+          },
+          "listUrlFoto" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "listLatitud" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number"
+            }
+          },
+          "listLongitud" : {
+            "type" : "array",
+            "items" : {
+              "type" : "number"
+            }
+          }
+        }
+      },
+      "PosicionFiscalizador" : {
+        "id" : "PosicionFiscalizador",
+        "type" : "object",
+        "properties" : {
+          "idPosicionFiscalizador" : {
+            "type" : "string"
+          },
+          "codePosicionFiscalizador" : {
+            "type" : "string"
+          },
+          "codeUsuarioFiscalizador" : {
+            "type" : "string"
+          },
+          "longitud" : {
+            "type" : "number"
+          },
+          "latitud" : {
+            "type" : "number"
+          },
+          "departamento" : {
+            "type" : "string"
+          },
+          "provincia" : {
+            "type" : "string"
+          },
+          "distrito" : {
+            "type" : "string"
+          },
+          "fechaFormat" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      },
+      "Notificacion" : {
+        "id" : "Notificacion",
+        "type" : "object",
+        "properties" : {
+          "idNotificacion" : {
+            "type" : "string"
+          },
+          "codeNotificacion" : {
+            "type" : "string"
+          },
+          "codeProgramacionNotificacion" : {
+            "type" : "string"
+          },
+          "fechaNotificacion" : {
+            "type" : "string",
+            "format" : "date-time"
+          },
+          "fechaNotificacionFiltro" : {
+            "type" : "string"
+          },
+          "estado" : {
+            "type" : "string"
+          },
+          "version" : {
+            "type" : "string",
+            "format" : "int64"
+          }
+        }
+      }
+    },
+    "methods" : {
+      "com.inec.server.ws.WsGestionUsuario.estadoNotificacion" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.listarNotificaciones" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.guardarPosicion" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.actualizarUsuario" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.actualizarPassword" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.crearUsuario" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.enviarCorreoFiscalizadores" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.planificarNotificacion" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.loginUsuario" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.cerrarSesionFiscalizador" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.listarUsuarios" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.buscarUsuarioFiscalizadores" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.listarPosicionFiscalizadors" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.listarRutas" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      },
+      "com.inec.server.ws.WsGestionUsuario.listarRutasIntervalo" : {
+        "response" : {
+          "$ref" : "ReturnValue"
+        }
+      }
+    }
+  }
+}

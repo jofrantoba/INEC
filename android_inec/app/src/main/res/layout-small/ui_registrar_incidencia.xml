@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:background="#000000"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:elevation="0dp"
+            android:paddingLeft="@dimen/dimen15"
+            android:paddingRight="@dimen/dimen15"
+            android:paddingTop="@dimen/dimen20"
+            android:layout_below="@+id/layoutImage"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/content_department"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="Departamento"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_department"
+                    android:textSize="@dimen/dimen15"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:text="Provincia"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_provincia"
+                    android:textSize="@dimen/dimen15"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:text="Distrito"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_distrito"
+                    android:textSize="@dimen/dimen15"
+                    android:textColor="@android:color/black"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/content_provincia"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dimen8"
+                android:layout_height="30dp">
+                <TextView
+                    android:text="Lambayeque"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cont_departamento"
+                    android:textSize="@dimen/dimen9"
+                    android:textColor="@color/gris_gps"
+                    />
+                <TextView
+                    android:text="Chiclayo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cont_provincia"
+                    android:textSize="@dimen/dimen9"
+                    android:textColor="@color/gris_gps"
+                    />
+                <TextView
+                    android:text="Chiclayo"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cont_distrito"
+                    android:textSize="@dimen/dimen9"
+                    android:textColor="@color/gris_gps"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:maxLength="2000"
+                android:maxLines="4"
+                android:textSize="14sp"
+                android:hint="Direccion"
+                android:layout_marginBottom="@dimen/dimen15"
+                android:minHeight="20dp"
+                android:id="@+id/txt_direccion" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/content_partido"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dimen8"
+                android:layout_height="60dp">
+                <TextView
+                    android:text="Partido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen15"
+                    android:paddingTop="@dimen/dimen20"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lbl_partido"
+                    android:layout_weight="0.36" />
+                <Spinner
+                    android:layout_width="200dp"
+                    style="@style/combo_partidopolitico"
+                    android:background="@drawable/editext_drawable"
+                    android:id="@+id/combobox_partido" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/content_toogle"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radio_publicidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin30"
+                        android:layout_marginRight="@dimen/margin30"
+                        android:text="Publicidad"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton
+                        android:id="@+id/radio_propaganda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin30"
+                        android:text="Propaganda"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:maxLength="2000"
+                android:maxLines="4"
+                android:textSize="14sp"
+                android:hint="Descripcion"
+                android:layout_marginBottom="@dimen/dimen8"
+                android:minHeight="60dp"
+                android:id="@+id/txt_descripcion" />
+            <Button
+                android:id="@+id/btn_registrar_incidencia"
+                style="@style/Boton"
+                android:background="@color/colorAccent"
+                android:layout_gravity="center"
+                android:text="@string/txtButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

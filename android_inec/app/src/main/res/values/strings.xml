@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">INEC</string>
+
+    <string name="textButtonAceptar">Aceptar</string>
+    <string name="txtButton">Guardar</string>
+    <string name="txt_button_actualizar">Actualizar</string>
+
+    <string name="txt_button_ingresar">INGRESAR</string>
+    <string name="str_usuario_session">Usuario - Session</string>
+    <string name="textLabelCorreo">Correo</string>
+    <string name="textPassword">Clave</string>
+    <string name="separador">&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+
+    <string name="errCorreoValido">Ingrese DNI</string>
+    <string name="errIngreseClave">Ingrese clave</string>
+    <string name="err_ingreso_clave">Ingrese clave</string>
+    <string name="err_datos_incorrectos">Datos Incorrectos</string>
+    <string name="msg_welcome_Inec">Bienvenido a INEC</string>
+
+    <string name="msg_not_incidencia">No se encontraron Actividades..</string>
+
+
+    <string name="item_ver">Ver</string>
+    <string name="item_editar">Editar</string>
+    <string name="item_reporte">Reporte</string>
+
+    <string name="msg_registro_correcto">Se Registro la Actividad</string>
+
+    <string name="msg_cerrar_session">Cerrar Sesión</string>
+    <string name="msg_cambiar_pass">Cambiar Clave</string>
+
+    <string name="txt_ubicacion">Ubicación</string>
+    <string name="txt_reporte">Generar Reporte</string>
+
+    <string name="ireport_succesfull">Reporte creado con Éxito</string>
+    <string name="ireport_valideDatePicker">Elegir una Fecha</string>
+
+
+    <string name="txt_posicion_notificacion">Registre su Posición</string>
+
+    <string name="weblink_one">http://aplicaciones007.jne.gob.pe/conjeejne/wf_default.aspx</string>
+    <string name="weblink_two">http://www.infogob.com.pe/</string>
+    <string name="weblink_three">http://www.jne.gob.pe/sie/</string>
+    <!---->
+</resources>

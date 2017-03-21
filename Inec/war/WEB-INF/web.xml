@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+  <!-- Servlets -->
+
+	<servlet>
+	<servlet-name>GAEJCronServlet</servlet-name>
+	<servlet-class>com.inec.server.control.servlet.GAEJCronServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>GAEJCronServlet</servlet-name>
+	<url-pattern>/gaejcronjob</url-pattern>
+	</servlet-mapping>      
+
+	<servlet>
+		<servlet-name>serviceGestionMantenimiento</servlet-name>
+		<servlet-class>com.inec.server.control.rpc.ServiceGestionMantenimientoImpl</servlet-class>
+	</servlet>
+
+  <servlet-mapping>
+		<servlet-name>serviceGestionMantenimiento</servlet-name>
+		<url-pattern>/Inec/servicegestionmantenimiento</url-pattern>
+	</servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>srvGestionMantenimiento</servlet-name>
+		<servlet-class>com.inec.server.control.servlet.SrvGestionMantenimiento</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>srvGestionMantenimiento</servlet-name>
+		<url-pattern>/inecservlet.html</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>srvGestionMantenimiento</servlet-name>
+		<url-pattern>/inecservlet2.html</url-pattern>
+	</servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Inec.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+    <init-param>
+      <param-name>services</param-name>
+      <param-value>com.inec.server.ws.WsGestionIncidencia,com.inec.server.ws.WsGestionMantenimiento,com.inec.server.ws.WsGestionUsuario</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SystemServiceServlet</servlet-name>
+    <url-pattern>/_ah/spi/*</url-pattern>
+  </servlet-mapping>
+
+  	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>mail</web-resource-name>
+			<url-pattern>/_ah/mail/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+  
+</web-app>

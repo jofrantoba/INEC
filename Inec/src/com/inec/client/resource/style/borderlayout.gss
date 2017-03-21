@@ -1,0 +1,33 @@
+html{
+    overflow: hidden;
+}
+
+#pnlContenedor{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;    
+}
+
+#pnlNorte{
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100%;  
+}
+
+#pnlCenter{
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;    
+}
+
+#pnlSur{
+    display: block;
+    position:absolute;
+    bottom: 0px;   
+    height: auto;
+    width: 100%;
+}
+

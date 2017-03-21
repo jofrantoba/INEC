@@ -1,0 +1,46 @@
+@def COLOR_APP_VERDE #d32f2f;
+@def COLOR_APP_BLANCO #FFFFFF;
+@def COLOR_APP_GRIS #333333;
+
+
+#txtInput input{
+width: 100% !important;
+}
+
+
+.pnlControl td, th {
+    padding: 0px 0px 0px 0px !important;
+}
+
+#btnCombo{
+border: none;
+}
+
+#imgCombo{
+width:24px;
+height:24px;
+}
+
+#simplePopup{
+background: COLOR_APP_BLANCO;
+padding-left: 10px;
+box-shadow: 2px 2px 5px COLOR_APP_GRIS;
+}
+
+#simplePopup td,th{
+padding: 0px 0px 0px 0px !important;
+}
+
+#simplePopup td{
+height:48px !important;
+}
+
+#simplePopup thead{
+padding:0px;
+margin:0px;
+display:none;
+}
+
+#txtBuscar{
+margin:0px !important;
+}

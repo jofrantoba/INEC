@@ -1,0 +1,72 @@
+#pnlToolBar{
+box-shadow: 2px 2px 5px #888888;
+}
+
+#btnToolHome{
+}
+
+#btnToolHome:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolTurista:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolNoticia:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolOferta:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolPublicidad:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolChat:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolConquista:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolPago:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolContactenos:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolNegocio:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolDestino:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolColonia:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}
+#btnToolMiembro:hover{
+box-shadow: 2px 2px 5px #888888 !important;
+background:#B40404;
+border:none;
+}

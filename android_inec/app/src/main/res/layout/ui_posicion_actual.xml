@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/uicp_layout_toolbar"
+        android:background="@color/red_inec"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="200dp"
+            android:id="@+id/uipa_layout_onclick"
+            android:background="@color/red_inec"
+            android:gravity="center"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="32dp"
+                android:background="@drawable/ic_flecha_atras"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="left|center"
+                android:text="Posicion Actual"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ui_content_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen8"
+        android:layout_below="@+id/uicp_layout_toolbar"
+        android:background="@color/white"
+        android:paddingLeft="8dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:paddingTop="@dimen/dimen9"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/uipa_lbl_latitud"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Latitud:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:paddingRight="@dimen/dimen15"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+
+            <TextView
+                android:id="@+id/uipa_lbl_longitud"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Longitud:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:text=""
+                android:paddingRight="@dimen/dimen15"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/uipa_lbl_departamento"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Departamento:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_departamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:text=""
+                android:paddingRight="@dimen/dimen15"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_separator"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/uipa_lbl_provincia"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Provincia:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_provincia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:paddingRight="@dimen/dimen15"
+                android:text=""
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/uipa_lbl_distrito"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Distrito:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_distrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:text=""
+                android:paddingRight="@dimen/dimen15"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/dimen20"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/uipa_lbl_fecha"
+                android:layout_width="@dimen/dimen_display_info"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Fecha:"
+                android:layout_marginRight="@dimen/dimen15"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/uipa_display_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/display_info"
+                android:textStyle="italic"
+                android:text=""
+                android:paddingRight="@dimen/dimen15"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/uipa_content_map"
+        android:layout_below="@+id/ui_content_toggle"
+        tools:context="UiCrearDestinoMaps"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+</RelativeLayout>

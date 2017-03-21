@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inec.com">
+    <!-- PERMISOS OAUTH-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- PERMISO GPS-->
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.network" android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- PERMISOS CAMARA -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- PERMISOS OBTENER DATOS DE TELEFONO -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.inec.utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_inec"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.inec.uiiniciarsesion.UiIniciarSesionImpl"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation|screenSize"
+            >
+        <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name="com.inec.uihomeapp.UiHomeAppImpl"
+            android:theme="@style/NoActionbar"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.inec.uicapturarfoto.UiCapturarFotoImpl"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity android:name="com.inec.uiregistrarincidencia.UiRegistrarIncidenciaImpl"
+            android:screenOrientation="portrait"
+            ></activity>
+
+        <activity android:name="com.inec.ui_listar_incidencia.UiListarIncidenciaImpl"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name="com.inec.ui_editar_incidencia.UiEditarIncidenciaImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            ></activity>
+        <activity android:name="com.inec.ui_mis_rutas.UiMisRutasImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <activity android:name="com.inec.ui_cambiar_password.UiCambiarPasswordImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <activity android:name="com.inec.ui_posicion_actual.UiPosicionActualImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <activity android:name="com.inec.ui_show_galeria.UiShowGaleriaImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <activity android:name="com.inec.ui_reporte.UiReporteImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <activity android:name="com.inec.ui_notificacion.UiNotificacionImpl"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionbar"
+            ></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="io.fabric.ApiKey" android:value="cc0e59fa64389364b3220404f697efff13b0bcd6" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCryTyTY0uoYwze3ugRJ__NwJtzLlY_3Vg"/>
+        <service
+            android:name="com.inec.utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.inec.utils.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

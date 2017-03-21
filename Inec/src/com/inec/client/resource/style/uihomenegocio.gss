@@ -1,0 +1,27 @@
+
+@def COLOR_APP_VERDE #d32f2f;
+@def COLOR_APP_BLANCO #FFFFFF;
+@def COLOR_APP_GRIS #333333;
+
+
+::-webkit-input-placeholder { 
+	color: COLOR_APP_GRIS; 
+}
+
+#kngNavBar{
+	background-color: COLOR_APP_VERDE !important;
+	margin-bottom: 100px;
+}
+
+#kngFootCopy{
+text-align:center;
+}
+
+#kngButtonCuenta{
+	background-color: COLOR_APP_GRIS !important;
+	margin-right:2em;
+}
+
+#pnlTabs{
+	box-shadow:0 1px 0 0 COLOR_APP_VERDE;	
+}

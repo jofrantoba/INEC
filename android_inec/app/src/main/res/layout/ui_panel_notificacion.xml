@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_toolbar"
+        android:background="@color/red_inec"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="160dp"
+            android:gravity="center"
+            android:id="@+id/uimr_layout_click"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:layout_width="32dp"
+                android:background="@drawable/ic_flecha_atras"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="left|center"
+                android:text="Notificaciones"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/svPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:background="@color/white"
+        android:layout_below="@+id/layout_toolbar"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/uipn_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:minHeight="500dp"
+            android:layout_below="@+id/ui_content_toggle"
+            android:layout_height="match_parent">
+            <ListView
+                android:orientation="vertical"
+                android:id="@+id/uipn_layout_content"
+                android:layout_width="match_parent"
+                android:minHeight="580dp"
+                android:layout_height="wrap_content">
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </ScrollView>
+</RelativeLayout>

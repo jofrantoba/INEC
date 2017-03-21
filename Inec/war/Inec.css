@@ -1,0 +1,420 @@
+@CHARSET "ISO-8859-1";
+
+.gwt-MenuBar {
+  cursor: default !important;
+}
+.gwt-MenuBar .gwt-MenuItem {
+  cursor: default !important;
+  font-family: Arial Unicode MS, Arial, sans-serif !important;
+}
+ .gwt-MenuItem-selected {
+  background: #E3E8F3 !important;
+}
+.gwt-MenuBar{
+			
+}
+.gwt-MenuBar-horizontal {  
+	background:white !important;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItem {
+  padding: 5px 10px !important;
+  vertical-align: bottom !important;
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItemSeparator {
+  width: 1px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 0px !important;
+  background: grey !important;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItemSeparator .menuSeparatorInner {
+  width: 1px !important;
+  height: 1px !important;
+  background: grey !important;
+}
+.gwt-MenuBar-vertical {
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+  background: white !important;
+}
+.gwt-MenuBar-vertical table {
+  border-collapse: collapse !important;
+}
+.gwt-MenuBar-vertical .gwt-MenuItem {
+  padding: 2px 40px 2px 1px !important;
+}
+.gwt-MenuBar-vertical .gwt-MenuItemSeparator {
+  padding: 2px 0px !important;
+}
+.gwt-MenuBar-vertical .gwt-MenuItemSeparator .menuSeparatorInner {
+  height: 1px !important;
+  padding: 0px !important;
+  border: 0px !important;
+  overflow: hidden !important;
+}
+.gwt-MenuBar-vertical .subMenuIcon {
+  padding-right: 4px !important;
+}
+.gwt-MenuBar-vertical .subMenuIcon-selected {
+  background: #E3E8F3 !important;
+}
+.gwt-MenuBarPopup {
+  	margin: 0px 0px 0px 3px !important;  
+	background:white;
+	border: thin solid grey;    
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.gwt-MenuBarPopup div{
+	display: table !important;
+    border-collapse: separate !important;
+    border-color: grey !important;
+}
+
+.gwt-MenuBarPopup td{
+	padding : 0;
+}
+.gwt-MenuBarPopup .menuPopupMiddleCenter{
+	border:none !important;
+}
+
+.gwt-MenuBarPopup th{
+	padding : 0;
+}
+
+.gwt-MenuBarPopup table 
+.gwt-MenuBarPopup .menuPopupTopCenter {
+	padding: 0px 0px !important;
+}
+.gwt-MenuBarPopup .menuPopupBottomCenter {
+	padding: 0px 0px !important;
+}
+
+.menuPopupMiddleCenter{
+	padding: 0px 0px !important;
+}
+.gwt-MenuBarPopup .menuPopupMiddleLeft {
+  
+}
+.gwt-MenuBarPopup .menuPopupMiddleRight {  
+}
+.gwt-MenuBarPopup .menuPopupTopLeftInner {
+  width: 5px !important;
+  height: 5px !important;
+  zoom: 1 !important;
+}
+.gwt-MenuBarPopup .menuPopupTopRightInner {
+  width: 8px !important;
+  height: 5px !important;
+  zoom: 1 !important;
+}
+.gwt-MenuBarPopup .menuPopupBottomLeftInner {
+  width: 5px !important;
+  height: 8px !important;
+  zoom: 1 !important;
+}
+.gwt-MenuBarPopup .menuPopupBottomRightInner {
+  width: 8px !important;
+  height: 8px !important;
+  zoom: 1 !important;
+}
+.gwt-MenuBarPopup .menuPopupTopLeft {
+  padding: 0px 0px !important;
+}
+.gwt-MenuBarPopup .menuPopupTopRight {
+  padding: 0px 0px !important;
+}
+.gwt-MenuBarPopup .menuPopupBottomLeft {
+  padding: 0px 0px !important;
+}
+.gwt-MenuBarPopup .menuPopupBottomRight {
+  padding: 0px 0px !important;
+}
+html>body .gwt-MenuBarPopup {
+}
+* html .gwt-MenuBarPopup .menuPopupTopLeftInner {
+  width: 5px !important;
+  height: 5px !important;
+  overflow: hidden !important;
+}
+* html .gwt-MenuBarPopup .menuPopupTopRightInner {
+  width: 8px !important;
+  height: 5px !important;
+  overflow: hidden !important;
+}
+* html .gwt-MenuBarPopup .menuPopupBottomLeftInner {
+  width: 5px !important;
+  height: 8px !important;
+  overflow: hidden !important;
+}
+* html .gwt-MenuBarPopup .menuPopupBottomRightInner {
+  width: 8px !important;
+  height: 8px !important;
+  overflow: hidden !important;
+}
+
+.gwt-PushButton-up,
+.gwt-PushButton-up-hovering,
+.gwt-PushButton-up-disabled,
+.gwt-PushButton-down,
+.gwt-PushButton-down-hovering,
+.gwt-PushButton-down-disabled {
+  margin: 0;
+  text-decoration: none;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+.gwt-PushButton-up,
+.gwt-PushButton-up-hovering,
+.gwt-PushButton-up-disabled {
+  padding: 3px 5px 3px 5px;
+}
+.gwt-PushButton-up {
+  border:1px solid #bbb;
+  border-bottom: 1px solid #a0a0a0;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-PushButton-up-hovering {
+  border: 1px solid;
+  border-color: #939393;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-PushButton-up-disabled {
+  border: 1px solid #bbb;
+  cursor: default;
+  opacity: .5;
+  filter: alpha(opacity=45);
+  zoom: 1;
+}
+.gwt-PushButton-down,
+.gwt-PushButton-down-hovering,
+.gwt-PushButton-down-disabled {
+  padding: 4px 4px 2px 6px;
+  outline:none;
+}
+.gwt-PushButton-down {
+  border: 1px inset #666;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-PushButton-down-hovering {
+  border: 1px solid #939393;
+  border-top: 1px solid #333333;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-PushButton-down-disabled {
+  border: 1px outset #ccc;
+  cursor: default;
+  opacity: 0.5;
+  filter: alpha(opacity=45);
+  zoom: 1;
+}
+.gwt-ToggleButton-up,
+.gwt-ToggleButton-up-hovering,
+.gwt-ToggleButton-up-disabled,
+.gwt-ToggleButton-down,
+.gwt-ToggleButton-down-hovering,
+.gwt-ToggleButton-down-disabled {
+  margin: 0;
+  text-decoration: none;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.gwt-ToggleButton-up,
+.gwt-ToggleButton-up-hovering,
+.gwt-ToggleButton-up-disabled {
+  padding: 3px 5px 3px 5px;
+}
+.gwt-ToggleButton-up {
+  border:1px solid #bbb;
+  border-bottom: 1px solid #a0a0a0;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-ToggleButton-up-hovering {
+  border: 1px solid;
+  border-color: #939393;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-ToggleButton-up-disabled {
+  border: 1px solid #bbb;
+  cursor: default;
+  opacity: .5;
+  zoom: 1;
+  filter: alpha(opacity=45);
+}
+.gwt-ToggleButton-down,
+.gwt-ToggleButton-down-hovering,
+.gwt-ToggleButton-down-disabled {
+  padding: 4px 4px 2px 6px;
+}
+.gwt-ToggleButton-down {
+  background-position: 0 -513px;
+  border: 1px inset #666;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-ToggleButton-down-hovering {
+  background-position: 0 -513px;
+  border: 1px inset;
+  border-color: #9cf #69e #69e #7af;
+  cursor: pointer;
+  cursor: hand;
+}
+.gwt-ToggleButton-down-disabled {
+  background-position: 0 -513px;
+  border: 1px inset #ccc;
+  cursor: default;
+  opacity: .5;
+  zoom: 1;
+  filter: alpha(opacity=45);
+}
+
+.gwt-DecoratedTabBar {
+  background: #ccc;
+  padding-top: 6px;
+}
+.gwt-DecoratedTabBar .gwt-TabBarFirst {
+  width: 5px;  /* first tab distance from the left */
+}
+.gwt-DecoratedTabBar .gwt-TabBarRest {
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem {
+  border-collapse: collapse;
+  margin-left: 4px;
+}
+.gwt-DecoratedTabBar .tabTopCenter {
+  padding: 0px;
+  background: #8E8E8E;
+}
+.gwt-DecoratedTabBar .tabTopLeft,
+.gwt-DecoratedTabBar .tabTopRight {
+  padding: 0px;
+  zoom: 1;
+}
+.gwt-DecoratedTabBar .tabTopLeftInner,
+.gwt-DecoratedTabBar .tabTopRightInner {
+  width: 3px;
+  height: 3px;
+}
+.gwt-DecoratedTabBar .tabTopLeft {
+
+}
+.gwt-DecoratedTabBar .tabTopRight {
+}
+.gwt-DecoratedTabBar .tabMiddleLeft,
+.gwt-DecoratedTabBar .tabMiddleRight {
+  width: 3px;
+  padding: 0px;
+  background: #8E8E8E;
+}
+.gwt-DecoratedTabBar .tabMiddleLeftInner,
+.gwt-DecoratedTabBar .tabMiddleRightInner {
+  width: 1px;
+  height: 1px;
+}
+.gwt-DecoratedTabBar .tabMiddleCenter {
+  padding: 0px 5px 4px 5px;
+  cursor: pointer;
+  cursor: hand;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  background: #8E8E8E;
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopCenter {
+  background:#fff;
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopLeft {
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopRight {
+
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleLeft,
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleRight {
+  background: #fff;
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
+  cursor: default;
+  background: #fff;
+  color:#333;
+  font-weight:bold;
+}
+.gwt-DecoratedTabBar .gwt-TabBarItem-disabled .tabMiddleCenter {
+  cursor: default;
+  color: #999999;
+}
+html>body .gwt-DecoratedTabBar {
+}
+* html .gwt-DecoratedTabBar .tabTopLeftInner,
+* html .gwt-DecoratedTabBar .tabTopRightInner {
+  width: 3px;
+  height: 3px;
+  overflow: hidden;
+}
+.gwt-TabPanel {
+}
+.gwt-TabPanelBottom {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0px 1px 1px;
+  overflow: hidden;
+  padding: 6px;
+}
+.gwt-TabLayoutPanelTabs{
+	margin-top: 10px;
+	padding: 0px;
+	position:relative !important;	
+	height: 50px !important;
+	background: #FFFFFF;
+	/*border-bottom: 1px solid;*/
+	width:100% !important!
+}
+
+.gwt-PopupPanelGlass {
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.com-google-gwt-user-cellview-client-DataGrid-Style-dataGridSelectedRow {
+    background: #009933 none repeat scroll 0% 0% !important;
+    color: #FFF !important;
+    height: auto !important;
+    overflow: auto !important;
+}
+
+.G0BPCX-k-t {
+	border: 2px solid #009933 !important;
+}
+
+.G0BPCX-k-s {
+    color: #FFF !important;
+    height: auto !important;
+    overflow: auto !important;
+    background: #009933 none repeat scroll 0% 0% !important;
+}
+
+.indicator{
+	position: absolute;
+	bottom: 0;
+	height: 2px;
+	background-color: #333333 !important;
+	will-change: left, right;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+   position: static !important;
+    left: -9999px;
+    visibility: visible !important;
+}
+
+select{
+	display: list-item !important;;
+}
